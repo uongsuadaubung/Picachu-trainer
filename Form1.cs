@@ -14,10 +14,10 @@
 
         private readonly MyPoint[] _directions =
         {
-            new MyPoint { Row = -1, Col = 0 }, // di chuyển lên
-            new MyPoint { Row = 1, Col = 0 }, // di chuyển xuống
-            new MyPoint { Row = 0, Col = -1 }, // di chuyển trái
-            new MyPoint { Row = 0, Col = 1 }, // di chuyển phải
+            new() { Row = -1, Col = 0 }, // di chuyển lên
+            new() { Row = 1, Col = 0 }, // di chuyển xuống
+            new() { Row = 0, Col = -1 }, // di chuyển trái
+            new() { Row = 0, Col = 1 }, // di chuyển phải
         };
 
         public Form1()
@@ -35,7 +35,6 @@
         private void Init()
         {
             _baseAddr = _memory.GetBaseAddress();
-            ;
         }
 
         private void ResetTime()
@@ -153,7 +152,7 @@
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
-        private bool IsValidConnectBFS(MyPoint start, MyPoint end)
+        private bool IsValidConnectBfs(MyPoint start, MyPoint end)
         {
             bool[,] visited = new bool[Rows, Cols];
             for (int i = 0; i < Rows; i++)
