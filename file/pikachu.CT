@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"time"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>pikachu.exe+B6084</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"image 0"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>74</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"value 0"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>76</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"fist row 0"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>72</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"last row 0"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>cc</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"first row 1"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>de</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"last row 1"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>138</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"first row 2"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>14a</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"last row 2"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>1a4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"first row 3"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>1b6</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>13</ID>
+      <Description>"last row 3"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>"pikachu.exe"+000B6044</Address>
+      <Offsets>
+        <Offset>210</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Code :fstp dword ptr [picachu.exe+B6084]</Description>
+      <AddressString>picachu.exe+B02DF</AddressString>
+      <Before>
+        <Byte>A5</Byte>
+        <Byte>78</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+      </Before>
+      <Actual>
+        <Byte>D9</Byte>
+        <Byte>1D</Byte>
+        <Byte>84</Byte>
+        <Byte>60</Byte>
+        <Byte>4B</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>DF</Byte>
+        <Byte>E0</Byte>
+        <Byte>A8</Byte>
+        <Byte>0D</Byte>
+        <Byte>0F</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>first + 0x5A = last || nhảy đến dòng i thì bằng first  + (0x6C * i)
+72	  + 0x5A =  cc
+------------------
+de    + 0x5A =  138
+-------------------
+14a   + 0x5A =  1a4
+-------------------
+1b6   + 0x5A =  210
+</Comments>
+</CheatTable>
