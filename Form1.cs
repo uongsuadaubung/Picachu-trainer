@@ -111,7 +111,7 @@
                     }
                 }
 
-                if (i == 0 || i == Rows - 1)
+                if (i is 0 or Rows - 1)
                 {
                     continue;
                 }
