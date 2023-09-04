@@ -1,7 +1,7 @@
 ﻿namespace Picachu
 
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         private readonly MyMemory _memory;
         private int _baseAddr;
@@ -20,7 +20,7 @@
             new() { Row = 0, Col = 1 }, // di chuyển phải
         };
 
-        public Form1()
+        public Form()
         {
             InitializeComponent();
             _memory = new MyMemory("pikachu");

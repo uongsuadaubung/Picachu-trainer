@@ -1,6 +1,6 @@
 ﻿namespace Picachu
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             btnResetTime = new Button();
             checkBoxFreezeTime = new CheckBox();
             btnSuggestAPair = new Button();
@@ -100,7 +100,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pikachu trainer";
             TopMost = true;
